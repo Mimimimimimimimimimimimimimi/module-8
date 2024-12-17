@@ -1,0 +1,156 @@
+/* СБРОС СТИЛЕЙ */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  position: relative;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #1831ed;
+  font-family: Montserrat, sans-serif;
+}
+
+a:hover {
+  color: #4724b1;
+}
+
+img button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 7.5rem;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 3rem;
+  max-width: 100%;
+}
+
+.header__nav {
+  display: flex;
+  min-height: 3.5rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #b3e1ef;
+  min-height: 7.5rem;
+}
+
+.nav__logo-img {
+  width: 4.375rem;
+  height: 4.375rem;
+}
+
+.nav__companyName {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.main__title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: #18d7da;
+  margin: 2.5rem;
+}
+
+.main__btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.main__btn {
+  width: 14rem;
+  min-height: 3rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #8aeef2;
+  color: #32b6a6;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.main__btn:hover {
+  background-color: #3f5b59;
+}
+
+.main__posts {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.main__posts-container-loader {
+  border: 16px solid #e5baba;
+  border-radius: 50%;
+  border-top: 16px solid #1e9283;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.main__posts-container {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.main__posts-container-img {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.main__posts-container-img img {
+  /*display: block;*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-out;
+}
+
+.footer {
+  background-color: #b3e1ef;
+  min-height: 7.5rem;
+  
+}
+
